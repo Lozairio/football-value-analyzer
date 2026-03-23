@@ -1,7 +1,7 @@
 const analyze = async () => {
   setLoading(true);
   try {
-    const response = await fetch("https://api.groq.com/analyze", {
+    const response = await fetch("/api/analyze", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
